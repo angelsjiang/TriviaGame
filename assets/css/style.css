@@ -5,11 +5,14 @@ body {
 }
 
 .container {
-    margin: 50px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
     background-color: white;
     text-align: center;
     border: 5px dashed lightgrey;
     padding: 40px;
+    width: 960px;
     
 }
 
@@ -20,6 +23,10 @@ h1 {
     font-weight: bold;
 }
 
+.row {
+    display: block;
+}
+
 .row1,
 .row2,
 .row3 {
@@ -28,6 +35,11 @@ h1 {
 }
 
 #giphy {
-    width: auto;
+    width: 100%;
+    height: 100%;
     padding: 10px;
+}
+
+button {
+
 }

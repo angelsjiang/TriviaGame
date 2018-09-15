@@ -2,7 +2,7 @@ $(document).ready( function() {
 
     $("#restart").hide();
 
-    var number = 5;
+    var number = 30;
     var countQues = 0;
     var timeRemain = $("<div class='row timeRemaining'>");
     var question = $("<div class='row question'>");
@@ -37,7 +37,7 @@ $(document).ready( function() {
         $("#restart").hide();
         $(".timeRemaining").show();
         
-        number = 5;
+        number = 30;
         countQues = 0;
         correct = 0;
         incorrect = 0;
@@ -63,7 +63,7 @@ $(document).ready( function() {
         number--;
         if(number < 0) {
    
-            number = 5;
+            number = 30;
             timeCountDown;
             changingQue();
         }
@@ -85,11 +85,12 @@ $(document).ready( function() {
             question.append(triviaQuestions[countQues].que);
 
             for(var i = 0; i < triviaQuestions[countQues].ans.length; i++) {
-                var ansButtons = $("<button id='queAns'>");
+                var ansButtons = $("<br><button id='queAns'>");
                 ansButtons.attr("value",triviaQuestions[countQues].ans[i]);
                 console.log(ansButtons.val() + "outputting val");
                 ansButtons.text(triviaQuestions[countQues].ans[i]);
                 answers.append(ansButtons);
+                answers.append("<br>");
             }
 
             countQues += 1;
