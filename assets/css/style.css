@@ -1,5 +1,5 @@
 body {
-    background-image: url(../images/bg3.png);
+    background-image: url(../images/bg7.png);
     background-repeat: repeat;
 
 }
@@ -9,7 +9,7 @@ body {
     margin-top: 5%;
     margin-bottom: 5%;
     background-color: white;
-    opacity: 0.95;
+    opacity: 0.9;
     text-align: center;
     border: 5px dashed lightgrey;
     padding: 40px;
