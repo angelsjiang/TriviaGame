@@ -123,7 +123,7 @@ $(document).ready( function() {
             correct++;
             guess = "yay";
             randomGiphy();
-            $(".question").append("YOU GOT IT!");
+            $(".question").append("<br><h3>YOU GOT IT!</h3><br><br>");
 
             timeCountDown = setInterval(CountingDown, 1000);
         }
@@ -137,7 +137,7 @@ $(document).ready( function() {
             correct++;
             guess = "yay";
             randomGiphy();
-            $(".question").append("YOU GOT IT!");
+            $(".question").append("<br><h3>YOU GOT IT!</h3><br><br>");
 
             timeCountDown = setInterval(CountingDown, 1000);
         }
@@ -151,7 +151,7 @@ $(document).ready( function() {
             correct++;
             guess = "yay";
             randomGiphy();
-            $(".question").append("YOU GOT IT!");
+            $(".question").append("<br><h3>YOU GOT IT!</h3><br><br>");
             
             timeCountDown = setInterval(CountingDown, 1000);
         }
@@ -165,7 +165,7 @@ $(document).ready( function() {
             incorrect++;
             guess = "uhoh";
             randomGiphy();
-            $(".question").append("Sorry, it's not right...");
+            $(".question").append("<br><h3>Sorry, it's not right...</h3><br><br>");
             
             timeCountDown = setInterval(CountingDown, 1000);
         }
@@ -182,7 +182,7 @@ $(document).ready( function() {
         .then(function(response) {
 
             var imageSrc = response.data.image_original_url;
-            var randomGIF = $("<img>");
+            var randomGIF = $("<img id='giphy'>");
 
             randomGIF.attr("src", imageSrc);
             randomGIF.attr("alt", "random giphy");
